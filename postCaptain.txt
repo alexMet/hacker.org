@@ -1,0 +1,3 @@
+We change the method from GET to POST
+
+<form name=frm action=chal.php method=GET>

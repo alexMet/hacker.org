@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+<body>
+<script language="javascript" type="text/javascript">
+
+// answer is queen's gambit 
+
+<!--
+var keyStr = "ABCDEFGHIJKLMNOP" +
+               "QRSTUVWXYZabcdef" +
+               "ghijklmnopqrstuv" +
+               "wxyz0123456789+/" +
+               "=";
+
+/*function encodeIt(input) {
+     input = escape(input);
+     var output = "";
+     var chr1, chr2, chr3 = "";
+     var enc1, enc2, enc3, enc4 = "";
+     var i = 0;
+
+     do {
+        chr1 = input.charCodeAt(i++);
+        chr2 = input.charCodeAt(i++);
+        chr3 = input.charCodeAt(i++);
+
+        enc1 = chr1 >> 2;
+        enc2 = ((chr1 & 3) << 4) | (chr2 >> 4);
+        enc3 = ((chr2 & 15) << 2) | (chr3 >> 6);
+        enc4 = chr3 & 63;
+
+        if (isNaN(chr2)) {
+           enc3 = enc4 = 64;
+        } else if (isNaN(chr3)) {
+           enc4 = 64;
+        }
+
+        output = output +
+           keyStr.charAt(enc1) +
+           keyStr.charAt(enc2) +
+           keyStr.charAt(enc3) +
+           keyStr.charAt(enc4);
+        chr1 = chr2 = chr3 = "";
+        enc1 = enc2 = enc3 = enc4 = "";
+     } while (i < input.length);
+
+     return output;
+}*/
+
+function decodeIt(input) {
+
+     	var output = "";
+     	var chr1, chr2, chr3 = "";
+     	var enc1, enc2, enc3, enc4 = "";
+     	var i = 0;
+
+	do {
+ 	        el1 = input.charAt(i++);
+        	el2 = input.charAt(i++);
+        	el3 = input.charAt(i++);
+		el4 = input.charAt(i++);
+
+		enc1 = keyStr.indexOf(el1);
+		enc2 = keyStr.indexOf(el2);
+		enc3 = keyStr.indexOf(el3);
+		enc4 = keyStr.indexOf(el4);
+
+		chr1 = (enc1 << 2) | ((enc2 & 48) >> 4);
+		chr2 = ((enc2 & 15) << 4) | ((enc3 & 60) >> 2);
+		chr3 = ((enc3 & 1) << 6) | enc4;
+		
+		/*if (isNaN(chr2)) {
+			enc3 = enc4 = 64;
+		} else if (isNaN(chr3)) {
+			enc4 = 64;
+		}*/
+
+		output = output +
+			String.fromCharCode(chr1) +
+           		String.fromCharCode(chr2) +
+           		String.fromCharCode(chr3);
+        	chr1 = chr2 = chr3 = "";
+		enc1 = enc2 = enc3 = enc4 = "";
+	} while (i < input.length);
+
+	output = unescape(output);
+	return output;
+}
+
+
+function ff(answer) {
+	v = decodeIt(answer);
+	
+	if (v == 'cXVlZW4lMjdzJTIwZ2FtYml0') {
+		return true;
+	}
+	else {
+		//alert("not it! you typed: " + v);
+		return ""+v;
+	}
+}
+
+//<p><form name=frm action=chal.php method=GET onSubmit="return ff(document.frm.answer.value)">
+//var user = "Jane User";
+//var user = "SmFuZSUyMFVzZXI==";
+var user = "cXVlZW4lMjdzJTIwZ2FtYml0";
+
+document.body.innerHTML = decodeIt(user);
+//-->
+</script>
+</body>
+</html> 
+

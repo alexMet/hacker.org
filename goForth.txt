@@ -1,0 +1,6 @@
+Answer is thundercats after using the next command to get the page
+
+http http://www.hacker.org/challenge/misc/goforth.html 
+
+the problem is <script>history.go(-1);</script>
+

@@ -1,0 +1,7 @@
+01000001000010001010001011000000 -> 
+
+https://www.h-schmidt.net/FloatConverter/IEEE754.html
+
+8.53973388671875 -> 
+
+answer is 8.539734

@@ -1,0 +1,15 @@
+After looking at the page's source code, we find some javascript
+
+<script src="misc/jsi.js"></script>
+
+and the code is the following
+
+function ff(answer) {
+    if (answer == 'farglesnort') {
+        return true;
+    }
+    else {
+        alert("not it! you typed: " + answer);
+        return false;
+    }
+}

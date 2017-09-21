@@ -1,0 +1,3 @@
+A program for hack VM that counts the length of a string
+
+00<0:6?1+0^2cp

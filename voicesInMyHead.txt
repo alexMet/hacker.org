@@ -1,0 +1,5 @@
+Answer is insecticide
+
+sudo apt install audacity ->
+
+audacity satan.mp3 -> Effect -> Reverse -> Play -> "the answer is insecticide"

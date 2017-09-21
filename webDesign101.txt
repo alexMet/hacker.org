@@ -1,0 +1,5 @@
+Answer is red,green,blue
+
+#FF0000 -> red
+#00FF00 -> green
+#0000FF -> blue

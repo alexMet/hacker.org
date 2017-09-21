@@ -1,0 +1,3 @@
+Answer is spaghetti but first we have to remove the onSubmit
+
+<form name=frm action=chal.php method=GET onSubmit="return false">
