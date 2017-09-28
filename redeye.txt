@@ -1,0 +1,8 @@
+We download the image and open it with gimp and adjust the colors
+right click -> Colors -> Adjust Color Balance ->
+Uncheck "Preserve luminosity" ->
+Midtones (Red -100, Green -100, Blue 0) ->
+Highlights (Red 0, Green -100, Blue -100)
+
+and we can see the text clearly, at the bottom it says
+Password: HAL9000
