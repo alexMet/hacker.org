@@ -1,0 +1,21 @@
+If we reverse the given text
+
+    ,6u!tvtor, s! r3msuv 3HT
+
+we get the following
+
+    TH3 vusm3r !s ,rotvt!u6, 
+
+we can assume that the first word is "the" and the third is "is" so we replace every letter and we get
+   
+    T -> t, H -> h, 3 -> e, ! -> i
+    the vusmer is ,rotvtiu6,
+
+we can assume that the second word is "answer" so we replace the letters
+
+    v -> a, u -> n, m -> w
+    the answer is ,rotatin6,
+
+and with the hint from the challenge's name "iPod" we get
+
+    the answer is ,rotating,
